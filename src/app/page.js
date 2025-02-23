@@ -10,7 +10,7 @@ export default function Home() {
   const [name, setName] = useState("");
 
   const apiCall = () => {
-    axios.get('http://ec2-51-21-3-160.eu-north-1.compute.amazonaws.com:8080/').then((res) => {
+    axios.get('http://localhost:8080/').then((res) => {
       //this console.log will be in our frontend console
       setName(res.data + "from express")
     })
